@@ -31,8 +31,9 @@
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
           <div class="navbar-nav ms-right">
-            <a class="nav-link" aria-current="page" href="{% url 'allblogs' %}">Blog</a>
+            <!-- <a class="nav-link" aria-current="page" href="{% url 'allblogs' %}">Blog</a> -->
             <a class="nav-link" href="{% static 'gitcheatsheet.pdf' %}">Resume</a>
+            <a class="nav-link" href="https://twitter.com/risabh_">LinkedIn</a>
             <a class="nav-link" href="https://twitter.com/risabh_">Twitter</a>
             <a class="nav-link" href="https://instagram.com/risabh_">Instagram</a>
             <a class="nav-link" href="https://github.com/rmcodes03">GitHub</a>
@@ -46,6 +47,8 @@
     <div class="py-5">
       <section class="jumbotron text-center">
         <div class="container">
+          <img src="media/images/profile_pic.jpg" alt="Circular Image" style="width: 100%; height: 100%; object-fit: cover; width: 300px; height: 300px; border-radius: 50%; overflow: hidden; text-align: center;">
+          <br><br>
           <h1 class="jumbotron-heading">Hi, I'm Risabh.</h1>
           <p class="lead text-muted">This is the place where I show the projects on which I have worked on. Have a nice day!</p>
           <p><a href="mailto:mishrarisabh2000@gmial.com" class="btn btn-secondary my-2">Email Me</a></p>
@@ -61,10 +64,11 @@
 
           <div class="col-md-4 pt-3">
             <div class="card mb-4 box-shadow">
-              <a href="{% url 'projectdetails' 1 %}" style="text-decoration: none; color:black;">
-              <img class="card-img-top" height="200px" width="300px" src="media/images/aamir-khan-forgotten-Ghajini-meme-template.jpg"/>
+              <a href="https://github.com/rmcodes03/jsim1" style="text-decoration: none; color:black;">
+              <img class="card-img-top" height="200px" width="300px" src="media/images/jaccardsimilarity.png"/>
               <div class="card-body">
-                <p class="card-text">Project 1</p>
+                <p class="card-text"><b>Jaccard Similarity</b></p>
+                <p>Django webapp that calculates jaccard similarity. Created this for a class presentation topic. Also hosted it using Vercel.</p>
               </div>
               </a>
             </div>
@@ -72,10 +76,11 @@
 
           <div class="col-md-4 pt-3">
             <div class="card mb-4 box-shadow">
-              <a href="{% url 'projectdetails' 2 %}" style="text-decoration: none; color:black;">
-              <img class="card-img-top" height="200px" width="300px" src="media/images/Leonardo_DiCaprio_Laughing_13082020185601_1.jpg"/>
+              <a href="https://github.com/rmcodes03/staticportfolio" style="text-decoration: none; color:black;">
+              <img class="card-img-top" height="200px" width="300px" src="media/images/literally_me.jpg"/>
               <div class="card-body">
-                <p class="card-text">Project 2</p>
+                <p class="card-text"><b>Portfolio Website</b></p>
+                <p>Simple portfolio website created using Django framework. Hosted it using Railway.</p>
               </div>
               </a>
             </div>
@@ -83,10 +88,23 @@
 
           <div class="col-md-4 pt-3">
             <div class="card mb-4 box-shadow">
-              <a href="{% url 'projectdetails' 3 %}" style="text-decoration: none; color:black;">
-              <img class="card-img-top" height="200px" width="300px" src="media/images/ajay-devgn-meme.png"/>
+              <a href="https://drive.google.com/drive/folders/1XKCdR4e0Rowr6Uucpvui5j7q55hMyL74?usp=sharing" style="text-decoration: none; color:black;">
+              <img class="card-img-top" height="200px" width="300px" src="media/images/smartblindstick_thumbnail.jpg"/>
               <div class="card-body">
-                <p class="card-text">{{ project.project_title }}</p>
+                <p class="card-text"><b>Smart Blind Stick</b></p>
+                <p>IoT project made with Arduino UNO and Ultrasonic sensor. Buzzes sound when and object is detected in front.</p>
+              </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-md-4 pt-3">
+            <div class="card mb-4 box-shadow">
+              <a href="https://github.com/rmcodes03/betterlife" style="text-decoration: none; color:black;">
+              <img class="card-img-top" height="200px" width="300px" src="media/images/Capture.png"/>
+              <div class="card-body">
+                <p class="card-text"><b>Betterlife</b></p>
+                <p>Android Application to donate and receive medicines. Created this project as a third year final project.</p>
               </div>
               </a>
             </div>
